@@ -1,0 +1,53 @@
+.journalEntry {
+    display: flex;
+    padding: 50px;
+}
+
+.imageContainer {
+    width: 125px;
+    height: 168px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.mainImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin: 10px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.location a {
+    text-decoration: underline;
+    color: #918E9B;
+    margin-left: 9px;
+    margin-top: 2px;
+}
+
+.location h3 {
+    color: #2B283A;
+}
+
+.description h2 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.date {
+    margin-top: 9px;
+    margin-bottom: 9px;
+    font-weight: bold;
+    font-size: 14px;
+}
