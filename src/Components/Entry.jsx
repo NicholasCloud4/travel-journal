@@ -18,14 +18,14 @@ import React from "react";
 import styles from "./Entry.module.css";
 
 export default function Entry(props) {
-    console.log(props.img)
+    console.log(props.entry)
     return (
         <>
             <article className={styles.journalEntry}>
                 <div className={styles.imageContainer}>
                     <img
-                        src={props.img.src}
-                        alt={props.img.alt}
+                        src={props.entry.img.src}
+                        alt={props.entry.img.alt}
                         className={styles.mainImage}
                     />
                 </div>
@@ -33,14 +33,14 @@ export default function Entry(props) {
                 <div className={styles.textContainer}>
                     <div className={styles.location}>
                         <img src="src/assets/marker.png" alt="" />
-                        <h3>{props.country}</h3>
-                        <a href={props.googleMapsLink}>View on Google Maps</a>
+                        <h3>{props.entry.country}</h3>
+                        <a href={props.entry.googleMapsLink}>View on Google Maps</a>
                     </div>
 
                     <div className={styles.description}>
-                        <h2>{props.title}</h2>
-                        <p className={styles.date}>{props.dates}</p>
-                        <p>{props.text}</p>
+                        <h2>{props.entry.title}</h2>
+                        <p className={styles.date}>{props.entry.dates}</p>
+                        <p>{props.entry.text}</p>
                     </div>
                 </div>
             </article>
